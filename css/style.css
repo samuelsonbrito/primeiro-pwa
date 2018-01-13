@@ -1,3 +1,39 @@
-body{
+*{
+	box-sizing: border-box;
+}
+/** muito pequeno */
+.container{
+	width: 100%;
+	margin-left: : auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
 	background-color: red;
+}
+
+/** pequento */
+@media(min-width: 576px){
+	.container{
+		max-width: 540px;
+	}
+}
+/** medio */
+@media(min-width: 768px){
+	.container{
+		max-width: 720px;
+	}
+}
+
+/** grande */
+@media(min-width: 992px){
+	.container{
+		max-width: 960px;
+	}
+}
+
+/** muito grande */
+@media(min-width: 1200px){
+	.container{
+		max-width: 1140px;
+	}
 }
