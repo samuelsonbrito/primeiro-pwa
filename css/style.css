@@ -1,12 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+
+#header, #form-add-note{
+	margin-bottom: 20px;
+}
+
+#content{
+	padding-bottom: 20px;
+}
+
+#notes ul, #notes li{
+	list-style: none;
+}
+
+#notes li {
+	cursor: pointer;
+	padding: 10px;
+}
+
+#notes li:hover {
+	background-color: #607d8b;
+	color: #fff;
+}
+
 *{
+	background-color: transparent;
 	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	padding: 0;
 }
 
 body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
+	padding: 20px;
+}
+
+h1, p{
+	padding: 20px;
+}
+
+h1{
+	font-size: 2.8em;
+}
+
+p{
+	font-size: 1em;
+}
+
+input{
+	font: inherit;
+	padding: 10px 20px;
 }
 
 /** muito pequeno */
@@ -17,6 +62,19 @@ body{
 	padding-left: 20px;
 	padding-right: 20px;
 	background-color: red;
+}
+
+.row{
+	display: flex;
+
+}
+
+.col-1{
+	flex-grow: 1;
+}
+
+.col-2{
+	flex-grow: 2;
 }
 
 /** pequento */
